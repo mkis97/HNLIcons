@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4E342E</color>
+    <color name="colorPrimaryDark">#3E2723</color>
+    <color name="colorAccent">#827717</color>
+    <color name="colorBackgroundMain">#D7CCC8</color>
+    <color name="colorBacgroundSecond">#EFEBE9</color>
+    <color name="colorButtons">#BCAAA4</color>
+    <color name="colorEditText">#FFFFFF</color>
+    <color name="colorRadioGroup">#FAFAFA</color>
+    <color name="colorBackgroundThird">#FAFAFA</color>
+</resources>

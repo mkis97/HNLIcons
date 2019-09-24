@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBackgroundMain">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_insp"
+        android:text="@string/bt_upper"
+        android:background="@color/colorButtons"
+        android:onClick="toast"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit"
+        android:layout_above="@id/group_one"
+        android:text="@string/bt_lower"
+        android:background="@color/colorButtons"
+        android:onClick="newDesc"
+        />
+
+    <RadioGroup
+        android:id="@+id/group_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorRadioGroup">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:text="@string/rb_one"
+            android:id="@+id/rbtn_first"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/rbtn_first"
+            android:text="@string/rb_two"
+            android:id="@+id/rbtn_second"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/rbtn_second"
+            android:text="@string/rb_three"
+            android:id="@+id/rbtn_third"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_sub"
+        android:layout_below="@id/btn_insp"
+        android:background="@color/colorBacgroundSecond">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_karic"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorBackgroundThird">
+
+             <ImageView
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:id="@+id/iv_karic"
+                 android:src="@drawable/karic"
+                 android:padding="1dp"
+                 android:onClick="gone_karic"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/tv_karic"
+                android:layout_toRightOf="@id/iv_karic"
+                android:padding="5dp"
+                android:onClick="back_karic"
+                android:text="@string/karic_info"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_amigo"
+            android:layout_below="@+id/rl_karic"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorBackgroundThird">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_amigo"
+                android:src="@drawable/amigo"
+                android:padding="1dp"
+                android:onClick="gone_amigo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/tv_amigo"
+                android:layout_toRightOf="@id/iv_amigo"
+                android:padding="5dp"
+                android:onClick="back_amigo"
+                android:text="@string/amigo_info"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_brkljaca"
+            android:layout_below="@id/rl_amigo"
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorBackgroundThird">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_brkljaca"
+                android:src="@drawable/brkljaca"
+                android:padding="1dp"
+                android:onClick="gone_brkljaca"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/tv_brkljaca"
+                android:layout_toRightOf="@+id/iv_brkljaca"
+                android:padding="5dp"
+                android:onClick="back_brkljaca"
+                android:text="@string/brkljaca_info"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/et_enter"
+        android:hint="@string/et_enterdesc"
+        android:layout_above="@id/btn_edit"
+        android:background="@color/colorEditText"/>
+</RelativeLayout>
+
+

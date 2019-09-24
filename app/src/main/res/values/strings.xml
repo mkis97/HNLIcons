@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ikone HNL-a</string>
+    <string name="bt_upper">Inspiration</string>
+    <string name="bt_lower">Edit description</string>
+    <string name="rb_one">First person</string>
+    <string name="rb_two">Second person</string>
+    <string name="rb_three">Third person</string>
+    <string name="et_enterdesc">Enter new description</string>
+    <string name="karic_info">16.11.1973\n<b>Veldin Karić</b> hrvatski je nogometaš. Trenutačno igra za varaždinski NK Varteks. Iako je u 45. godini života, i dalje puni protivničke mreže.</string>
+    <string name="amigo_info">27.9.1979.\n<b>Romano Obilinović</b> bivši je hrvatski nogometaš koji je ljubav prema nogometu nasljedio od oca koji je 10 godina igrao za NK Split.</string>
+    <string name="brkljaca_info">7.2.1985.\n<b>Mario Brkljača</b> je bivši hrvatski nogometaš, a trenutačno se nalazi na poziciji sportskog direktora NK Rudeša i skaut je Alavésa.</string>
+</resources>
